@@ -37,7 +37,6 @@ The following gtf files should be downloaded from their respective gene annotati
 
 [RefSeq-NCBI release 39](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gtf.gz)
 
-*
 
 # Software
 
