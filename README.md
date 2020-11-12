@@ -40,12 +40,12 @@ The following gtf files should be downloaded from their respective gene annotati
 
 # Software
 
-The entire pipeline should be run in [**R 3.8**](https://www.r-project.org/) or higher, you will need the following [Bioconductor packages ](https://bioconductor.org)
+The entire pipeline should be run using [**R 4.0**](https://www.r-project.org/), you will need the following [Bioconductor packages ](https://bioconductor.org)
 * [Rsubread_2.2.6](https://bioconductor.org/packages/release/bioc/html/Rsubread.html)
 * [limma_3.44.3](https://bioconductor.org/packages/release/bioc/html/limma.html)
 * [edgeR_3.30.3](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
 
-Others include;
+Other tools needed include;
 * Python
 * Bash
 
