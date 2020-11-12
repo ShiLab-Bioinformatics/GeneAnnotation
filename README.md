@@ -27,7 +27,7 @@ Microarray data from the SEQC project with samples A to D hybridized to the Illu
 **GRCh38 reference genome**\
 The human GRCh38.p12 version 34 reference genome available at [**GENCODE**](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_34/GRCh38.primary_assembly.genome.fa.gz) is used. 
 
-**Gene annotation files**\
+**Gene annotation files**
 
 The following gtf files should be downloaded from their respective gene annotation databases and saved in the same directory as the code;
 
