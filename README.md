@@ -47,6 +47,7 @@ The entire pipeline can be run in [**R version 4.0.2**](https://www.r-project.or
 * [edgeR_3.30.3](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
 
 Others include;
-
+* Python
+* Bash
 
 
