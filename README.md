@@ -26,7 +26,7 @@ data. The expression values were measured for both the UHRR and HBRR samples tog
 Microarray data from the SEQC project with samples A to D hybridized to the Illumina Bead arrays
 
 **GRCh38 reference genome**\
-The human GRCh38.p12 version 34 reference genome available at [**GENCODE**](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_34/GRCh38.primary_assembly.genome.fa.gz) is used. 
+The human GRCh38.p12 version 34 reference genome available at [GENCODE](http://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_34/GRCh38.primary_assembly.genome.fa.gz) is used. 
 
 **Gene annotation files**
 
