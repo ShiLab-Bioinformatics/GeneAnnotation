@@ -34,8 +34,6 @@ The following gtf files should be downloaded from their respective gene annotati
 
 [Ensembl release 100](http://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.gtf.gz)
 
-[GENCODE release 34](http://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_34/gencode.v34.annotation.gtf.gz)
-
 [RefSeq-NCBI release 39](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gtf.gz)
 
 
