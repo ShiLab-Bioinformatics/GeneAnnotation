@@ -1,5 +1,3 @@
-Data 
-
 # Gene Annotation
 
 RNA sequencing is currently the method of choice for genome-wide profiling of gene expression. A popular approach to quantify expression levels of genes from
