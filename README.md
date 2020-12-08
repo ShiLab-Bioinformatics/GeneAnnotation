@@ -50,4 +50,8 @@ Other tools needed include;
 * Python
 * Bash
 
+## Running the analysis
+To run the analysis, simply download the Rmarkdown file (Analysis_pipeline.Rmd) and follow the guided steps.
+
+
 
