@@ -45,11 +45,11 @@ The entire pipeline should be run using [**R 4.0**](https://www.r-project.org/),
 * [Rsubread_2.2.6](https://bioconductor.org/packages/release/bioc/html/Rsubread.html)
 * [limma_3.44.3](https://bioconductor.org/packages/release/bioc/html/limma.html)
 * [edgeR_3.30.3](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
-* [Rstudio](https://rstudio.com/)
 
 Other tools needed include;
 * Python
 * Bash
+* [Rstudio](https://rstudio.com/)
 
 ## Running the analysis
 To run the analysis, simply download the Rmarkdown file (Analysis_pipeline.Rmd) and follow the guided steps.
