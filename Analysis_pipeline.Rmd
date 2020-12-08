@@ -92,11 +92,10 @@ buildindex(basename = index.path, reference = "GRCh38.primary_assembly.genome.fa
 ```
 
 
-The *align* function within **Rsubread** was used to perform the alignment. Gene annotation files from Ensembl, GENCODE, RefSeq-NCBI and the inbuilt RefSeq annotation in Rsubread were used as part of the alignment. 
+The *align* function within **Rsubread** was used to perform the alignment. Gene annotation files from Ensembl, RefSeq-NCBI and the inbuilt RefSeq annotation in Rsubread were used as part of the alignment. 
 
 The following gtf files should be downloaded from their respective gene annotation databases and saved in the same directory as the code;
 [Ensembl release 100](ftp://ftp.ensembl.org/pub/release-100/gtf/homo_sapiens/Homo_sapiens.GRCh38.100.gtf.gz)
-[GENCODE release 34](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_34/gencode.v34.annotation.gtf.gz)
 [RefSeq-NCBI release 39](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.39_GRCh38.p13/GCF_000001405.39_GRCh38.p13_genomic.gtf.gz)
 
 
@@ -162,7 +161,6 @@ The following list of annotations are used through out the analysis
 #build list of annotations
 annotation.files <- list(
   Ensembl = "Homo_sapiens.GRCh38.100.gtf",
-  GENCODE = "gencode.v34.annotation.gtf",
   RefSeq_NCBI = "GCF_000001405.39_GRCh38.p13_genomic_updated.gtf",
   RefSeq_Rsubread = "Rsubread-inbuilt-hg38-with-ERCC.SAF"
 )
@@ -249,7 +247,7 @@ load("featureCounts.RData")
 
 ## Analysis
 
-### Comparison of genomic features in Ensembl, GENCODE and RefSeq 
+### Comparison of genomic features in Ensembl and RefSeq 
 
 The barplot below shows the percentage of mapped fragments for each annotation and summarised in the table below.
 
@@ -276,7 +274,7 @@ summary.data <-
 ```{r,fig.height=5,fig.width=8}
 prop.counts <-
   subset(summary.data,
-         subset = Metric == "PropSummarized" & Annotation != "GENCODE")
+         subset = Metric == "PropSummarized")
 prop.counts$Value<-as.numeric(prop.counts$Value)
 barplot(Value~Annotation+Library,
         prop.counts,
@@ -303,7 +301,7 @@ barplot(Value~Annotation+Library,
 )
 ```
 
-The similarities in the complexity between Ensembl (v100), GENCODE (v34) and the 2 RefSeq (P13 for the public version and P1 for the Rsubread version) annotations are compared below.
+The similarities in the complexity between Ensembl (v100) and the 2 RefSeq (P13 for the public version and P1 for the Rsubread version) annotations are compared below.
 ```{r}
 if(!require(tidyr))
   install.packages("tidyr")
@@ -405,7 +403,7 @@ knitr::kable(
   format = "html",
   format.args = list(big.mark = ","),
   align = "c",
-  caption = "Comparison of features in Ensembl, GENCODE, RefSeq-NCBI and RefSeq-
+  caption = "Comparison of features in Ensembl, RefSeq-NCBI and RefSeq-
 Subread"
 )
 ```
@@ -675,8 +673,6 @@ For each annotation,genes with read counts >= `r cpm.filter` in at least 4 libra
 
 ```{r gene_filters}
 annotations<-names(annotation.files)
-#Exclude GENCODE
-annotations<-annotations[!grepl("GENCODE",annotations)]
 #Check distribution of reads before filtering via a boxplot
 rpkm.data<-do.call(rbind,lapply(annotations,function(x){
   y<-as.data.frame(rpkm(dge[[x]],log = T))
